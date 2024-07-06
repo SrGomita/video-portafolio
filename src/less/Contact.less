@@ -1,0 +1,95 @@
+.contact-container {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  
+    @media (min-width: 1024px) {
+      padding: 5rem;
+    }
+  }
+  
+  .title {
+    font-size: 52px;
+    font-weight: 600; /* Tailwind font-semibold */
+    margin-bottom: 5rem;
+    line-height: normal;
+    text-transform: uppercase;
+    color: #d946ef; /* Tailwind color fuchsia-500 */
+  }
+  
+  .form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 100%;
+  
+    @media (min-width: 1024px) {
+      width: 50%;
+    }
+  }
+  
+  .input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    
+    @media (min-width: 1024px) {
+      flex-direction: row;
+      gap: 1.5rem;
+    }
+  }
+  
+  .input {
+    width: 100%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 0.5rem;
+    background-color: #1e293b; /* Tailwind color slate-800 */
+    padding: 1rem;
+    border-width: 2px;
+    border-color: #7e22ce; /* Tailwind color fuchsia-800 */
+    box-shadow: 0 0 10px #7e22ce; /* Assuming b_glow adds a glow effect */
+    font-size: 1.25rem;
+    color: #64748b; /* Tailwind color slate-500 */
+  }
+  
+  .textarea {
+    width: 100%;
+    margin-top: 1rem;
+    border-radius: 0.5rem;
+    background-color: #1e293b; /* Tailwind color slate-800 */
+    padding: 1rem;
+    border-width: 2px;
+    border-color: #7e22ce; /* Tailwind color fuchsia-800 */
+    box-shadow: 0 0 10px #7e22ce; /* Assuming b_glow adds a glow effect */
+    font-size: 1.25rem;
+    color: #64748b; /* Tailwind color slate-500 */
+  }
+  
+  .submit-button {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+    color: #ffffff;
+    border-width: 2px;
+    background-color: #7e22ce; /* Tailwind color fuchsia-800 */
+    border-color: #7e22ce; /* Tailwind color fuchsia-800 */
+    border-radius: 0.5rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin-top: 1.5rem;
+    text-transform: uppercase;
+    font-size: 1.25rem;
+    font-weight: bold;
+    position: relative;
+    overflow: hidden;
+    transition: background-color 0.3s, box-shadow 0.3s;
+  
+    &:hover {
+      background-color: #0f172a; /* Tailwind color slate-900 */
+      box-shadow: 0 0 20px rgba(126, 34, 206, 0.5); /* Hover shadow color */
+    }
+  }
+  
